@@ -3,7 +3,7 @@ in the corporate design of the
 [Institute for Web Science and Technologies (WeST)](http://west.uni-koblenz.de/).
 Its style was adapted by Lukas from a template package that Leon sent him.
 
-Packages that are excluded (not compatable or not needed):
+Packages that are excluded (not compatible or not needed):
 
 - polyglossia
 - fontspec
@@ -12,18 +12,17 @@ Packages that are excluded (not compatable or not needed):
 
 ## Usage
 
-Have a look at the [example_assignment.tex](example_assignment.tex) file for how
+Have a look at the exemplary [assignment.tex](assignment.tex) file for how
 to use this class.
 
-Currently the code can be build using PdfLaTeX.
-For compilation [latexmk](https://www.ctan.org/pkg/latexmk/) is recommended, if
+For compilation [Stu](https://github.com/kunegis/stu) is recommended, if
 you have it installed you just have to perform:
 
-    git clone https://github.com/Institute-Web-Science-and-Technologies/WeSTassignment.git
-    cd WeSTassignment
-    latexmk
+    stu
 
-Of course you can also compile this class by calling `lualatex` manually.
+Of course you can also compile this class by calling `pdflatex` manually.
+
+    pdflatex assignment.tex
 
 ## ToDo
 

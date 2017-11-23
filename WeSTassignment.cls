@@ -185,73 +185,35 @@
 \newcommand*\makefooter{%
   \section*{Important Notes}
 
-  {
-    % Supress overful \hbox warning
-    % see https://tex.stackexchange.com/a/144615/75225
-    \hfuzz=\maxdimen
-
-    Ask questions and discussion with regard to the lecture, tutorial, or
-    assignments in
-    \begin{itemize}
-      \item The WebScience newsgroup:\\
-        \url{https://webnews.uni-koblenz.de/newsgroups.php?group=infko.webscience}
-      \item Our Facebook group:\\
-        \url{https://facebook.com/groups/InformationRetrievalUniKoblenz}
-    \end{itemize}
-  }
+%   Questions and discussion with regard to the lecture, tutorial, or assignments
+%   on\\
+%   \url{https://deliver.uni-koblenz.de/webnews/newsgroups.php?group=infko.webscience}\\
+%   or in our Facebook group\\
+%   \url{https://www.facebook.com/groups/InformationRetrievalUniKoblenz}
 
   \subsection*{Submission}
 
   \begin{itemize}
-    \item Solutions have to be checked into the SVN repository.
-      Use the directory name \texttt{solutions/assignment\@assignmentnumber{}/}
-      in your group's repository \emph{mandatory}.
-    \item The SVN repository is available via\\
-      \url{https://svn.uni-koblenz.de/westteaching/ir-ss17/<groupname>}
-    \item Solution format: all solutions for theoretical tasks as \emph{one} PDF
-      document.
-      Programming code has to be submitted as Python code.
+    \item Solutions have to be submitted to the SVN repository.
+      Use the directory name \texttt{groupname/assignment\@assignmentnumber{}/}
+      in your group's repository.
+%     \item The answer sheet must have the screenshots and the code where ever asked. 		Additional python \texttt{.py} file needs to be also added in the repository. 
     \item The name of the group and the names of all participating students must
-      be listed on each submission:
-
-      \begin{itemize}
-        \item at the top of each PDF file
-        \item at the top of each Python file (in comments)
-      \end{itemize}
-
-      Only named students will receive credit.
-    \item With the submission of your solution you confirm that you created the
-      solution independently as a group, especially without using other
-      intellectual contributions.
-      That is, you submission should not be
-      \href{https://en.wikipedia.org/wiki/Plagiarism}{plagiarism}!
-  \end{itemize}
-
-  \subsection*{Programming Assignments}
-
-  The programming assignments require you to have a Python 3.6+ interpreter
-  (older versions may still work coincidentally, but are not officially
-  supported) and the SciPy stack installed.
-  For an installation guide, see
-  \url{http://west.uni-koblenz.de/en/studying/installing-python}
-
-  The following rules apply for the \emph{implementation} of your solution:
-
-  \begin{itemize}
-    \item You can create as many additional code files as you need.
-      You can create as many additional classes or methods as you need (even in
-      the provided code files).
-      However, do not forget to submit \emph{all} \texttt{.py} code files to
-      the SVN.
-    \item Check that your code compiles and runs without errors.
-    \item Use \texttt{UTF-8} as the file encoding.
+      be listed on each submission.
+      
+%     \item With the submission of your solution you confirm that you created the
+%       solution independently as a group, especially without using other
+%       intellectual contributions.
+%       In other words, you submission should not be
+%       \href{https://en.wikipedia.org/wiki/Plagiarism}{plagiarism}!
+%       Should the case occur that the submissions of multiple groups are
+%       identical, none of these groups will receive credit.
+    \item Solution format: all solutions as \emph{one} PDF document.
+      Programming code has to be submitted as Python code to the SVN repository.
+      Upload \emph{all} \texttt{.py} files of your program!
+      Use \texttt{UTF-8} as the file encoding.
       \emph{Other encodings will not be taken into account!}
-    \item Test your implementation with the provided test cases.
-
-      Passing of all tests is a \emph{necessity} to receive full score, no
-      \emph{sufficiency}.
-      In general, programming against the provided test cases should assist you
-      in finding correct solutions.
+    \item Check that your code compiles without errors.
     \item Make sure your code is formatted to be easy to read.
       \begin{itemize}
         \item Make sure you code  has consistent
@@ -263,15 +225,21 @@
     \item Do \emph{not} use any accents, spaces or special characters in your
       filenames.
   \end{itemize}
+
+%   \clearpage
+  \subsection*{Acknowledgment}
+	
+    This LaTeX template was created by Lukas Schmelzeisen.    
+
+\subsection*{\LaTeX}
+Use \texttt{pdflatex assignment\_X.tex} to build your PDF.
 }
 
 % Bibliography -----------------------------------------------------------------
 
-% Family names before given names: http://tex.stackexchange.com/q/113573
-% Note: last-first renamed to family-given to reflect updated BibLaTeX
-% terminology.
-\DeclareNameAlias{sortname}{family-given}
-\DeclareNameAlias{default}{family-given}
+% Last names before first names: http://tex.stackexchange.com/q/113573
+\DeclareNameAlias{sortname}{last-first}
+\DeclareNameAlias{default}{last-first}
 
 % Author lastnames in small caps, but only in bibliography not in the citation.
 \AtBeginBibliography{
