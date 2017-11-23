@@ -5,10 +5,10 @@ Its style was adapted by Lukas from a template package that Leon sent him.
 
 Packages that are excluded (not compatible or not needed):
 
-- polyglossia
-- fontspec
-- unicode-math
-- lualatex-math
+- `polyglossia`
+- `fontspec`
+- `unicode-math`
+- `lualatex-math`
 
 ## Usage
 
@@ -23,6 +23,12 @@ you have it installed you just have to perform:
 Of course you can also compile this class by calling `pdflatex` manually.
 
     pdflatex assignment.tex
+
+Stu generates three files:
+
+- `assignment.pdf`: PDF with solutions
+- `assignment-for-students.pdf`: PDF without solutions
+- `assignment_X.zip`: uploadable zipball for students
 
 ## ToDo
 
