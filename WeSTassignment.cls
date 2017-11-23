@@ -29,19 +29,19 @@
 }
 
 % Language typesetting.
-\RequirePackage{polyglossia}
+%\RequirePackage{polyglossia}
 
 % Font selection.
-\RequirePackage{fontspec}
+%\RequirePackage{fontspec}
 
 % Micro-typographic extensions.
 \RequirePackage{microtype}
 
 % Unicode support for math. Load after other math/font packages.
-\RequirePackage{unicode-math}
+%\RequirePackage{unicode-math}
 
 % Patches a few math packages to work correctly with LuaLaTeX.
-\RequirePackage{lualatex-math}
+%\RequirePackage{lualatex-math}
 
 % Various useful tools for mathematical typesetting.
 \RequirePackage{mathtools}
@@ -99,7 +99,7 @@
   maxbibnames = 10, % max number of names in bibliography
   maxcitenames = 2, % max number of names in text cite
   uniquelist = minyear, % only add more authors if year is not unique
-  labeldateparts = true,
+% labeldateparts = true,
   giveninits = true, % abbreviate given name of authors
   doi = false, % do not show doi
   isbn = false, % do not show isbn
@@ -159,7 +159,7 @@
 % Section ----------------------------------------------------------------------
 
 % Redefine \section command so that it always starts on a new page.
-% (Remove this if you don't like it.)
+% (Remove this if you do not like it.)
 \let\oldsection\section
 \renewcommand*\section{%
   \clearpage%

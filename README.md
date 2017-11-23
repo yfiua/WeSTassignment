@@ -1,16 +1,21 @@
-This is a LaTeX class for creating lecture assignments in the corporate
-design of the
+This is the pdflatex version of the LaTeX class for creating lecture assignments,
+in the corporate design of the
 [Institute for Web Science and Technologies (WeST)](http://west.uni-koblenz.de/).
-It's style was adapted by Lukas from a template package that which Leon sent him.
+Its style was adapted by Lukas from a template package that Leon sent him.
+
+Packages that are excluded (not compatable or not needed):
+
+- polyglossia
+- fontspec
+- unicode-math
+- lualatex-math
 
 ## Usage
 
 Have a look at the [example_assignment.tex](example_assignment.tex) file for how
 to use this class.
 
-Currently the code can only be build using
-[LuaLaTeX](https://www.ctan.org/pkg/lualatex-doc), so make sure you have that
-installed.
+Currently the code can be build using PdfLaTeX.
 For compilation [latexmk](https://www.ctan.org/pkg/latexmk/) is recommended, if
 you have it installed you just have to perform:
 
@@ -31,5 +36,4 @@ Bugs:
 
 Additional Features:
 
-- Support other latex engines (`pdftex`, etc).
 - Rename "sections" to "tasks" so you can better reference them.

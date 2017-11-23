@@ -1,3 +1,7 @@
+# Customized files
+assignment_*.zip
+assignment_*/
+
 # Kile project file
 *.kilepr
 *.kate-swp
