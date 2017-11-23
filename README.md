@@ -15,20 +15,30 @@ Packages that are excluded (not compatible or not needed):
 Have a look at the exemplary [assignment.tex](assignment.tex) file for how
 to use this class.
 
+Use
+    
+    %solution-start
+    stuffs that you do not want students to see
+    %solution-end
+    
+to mark your solutions.
+
+## Compilation
+
 For compilation [Stu](https://github.com/kunegis/stu) is recommended, if
 you have it installed you just have to perform:
 
     stu
 
-Of course you can also compile this class by calling `pdflatex` manually.
-
-    pdflatex assignment.tex
-
-Stu generates three files:
+Stu generates three files automatically:
 
 - `assignment.pdf`: PDF with solutions
 - `assignment-for-students.pdf`: PDF without solutions
 - `assignment_X.zip`: uploadable zipball for students
+
+Of course you can also compile this class by calling `pdflatex` manually.
+
+    pdflatex assignment.tex
 
 ## ToDo
 
