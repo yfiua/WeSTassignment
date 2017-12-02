@@ -2,6 +2,8 @@ This is the pdflatex version of the LaTeX class for creating lecture assignments
 in the corporate design of the
 [Institute for Web Science and Technologies (WeST)](http://west.uni-koblenz.de/).
 Its style was adapted by Lukas from a template package that Leon sent him.
+The pdflatex version was adapted by Jun from the lualatex version,
+and is about 30% faster.
 
 Packages that are excluded (not compatible or not needed):
 
@@ -21,7 +23,10 @@ Use
     stuffs that you do not want students to see
     %solution-end
     
-to mark your solutions.
+to mark your solutions. You don't need to manually create the .tex file for students.
+
+Put the dependencies into [dep.assignment](dep.assignment) and
+[dep.assignment-for-students](dep.assignment-for-students).
 
 ## Compilation
 
@@ -44,10 +49,6 @@ Of course you can also compile this class by calling `pdflatex` manually.
 
 There is a lot left to be done before this thing can be considered stable,
 pull requests are always welcome.
-
-Bugs:
-
-- Have better example content.
 
 Additional Features:
 

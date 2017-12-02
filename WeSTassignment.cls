@@ -33,6 +33,7 @@
 
 % Font selection.
 %\RequirePackage{fontspec}
+\RequirePackage[T1]{fontenc}
 
 % Support for the Text Companion fonts
 \RequirePackage{textcomp}
@@ -75,7 +76,7 @@
 \RequireOptionsPackage[
   unicode = true, % Signal that this is a unicode document.
   breaklinks = true, % Enable links across line boundaries.
-  pdfauthor = {Lukas Schmelzeisen},
+  pdfauthor = {Institute WeST}, % Change it as you want
   pdfhighlight = /O, % TODO: Find out what this does.
 ]{hyperref}
 
@@ -232,7 +233,7 @@
 %   \clearpage
   \subsection*{Acknowledgment}
 	
-    This LaTeX template was created by Lukas Schmelzeisen.    
+    This pdfLaTeX template was adapted by Jun Sun based on the LuaLaTeX version by Lukas Schmelzeisen.    
 
 \subsection*{\LaTeX}
 Use \texttt{pdflatex assignment\_X.tex} to build your PDF.
@@ -319,7 +320,7 @@ Use \texttt{pdflatex assignment\_X.tex} to build your PDF.
   basicstyle = \small\ttfamily,
   keywordstyle = \color{blue}\bfseries,
   commentstyle=\color{gray}\itshape,
-  mathescape,
+  mathescape = false,
   showspaces = false,
   showstringspaces = false,
   upquote = true
