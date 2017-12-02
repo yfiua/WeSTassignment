@@ -38,9 +38,9 @@
 \begin{document}
 
 \maketitle
-This assignment focuses on the concepts of 1) \textbf{Web Content}, 2) \textbf{Dynamic Web Content}.
+This assignment focuses on the topics of 1) \textbf{Hello World}, 2) \textbf{Dynamic Web Content}.
 
-For all the assignment questions that require you to write code, make sure to include the code in the answer sheet, along with a separate python file. If you generate a plot from your python script, please add them in the answer sheet.\\ \\ 
+For all the assignment questions that require you to write code, make sure to include the code in the answer sheet, along with a separate Python file. If you generate a plot from your Python script, please add them in the answer sheet.\\ \\ 
 
 
 
@@ -49,172 +49,13 @@ For all the assignment questions that require you to write code, make sure to in
 Team Name: XXXX
 
 
-\section{XML (10 points)}
-
-Your task is to read the text passage below and create a well formed XML document that takes into account all the information presented with regards to the \texttt{researchers}.\\
-
-\texttt{Prof. Dr. Jason Bourne of Identity University,Galway, Ireland was traveling to New York by flight number IC814 for a conference on Computer based Medical Imaging. Incidentally, he met two other researchers Forrest Gump and Don Vito Corleone while boarding the flight who were heading for the same conference as well. While Don had already completed his PhD and is now a having a post doctoral position in Sicilian University, Sicily, Italy, Forrest is still pursuing his PhD in Bubba University, Texas, USA. As luck would have it, all three of them got their seats next to each other on the flight. On the flight, each one was asked for their preferred choice of drinks. While Prof.Dr. Bourne had Chardonay, Forrest settled for a beer and Don was happy with sparkling water. Don asked Prof. Bourne what he was doing at the conference to which he replied, a keynote titled "\textit{Smart Cameras for Smart Doctors}". Hearing that, Forrest got excited and said he too is going to present a paper in similar direction titled "\textit{Smart cameras to detect health hazards}". Don was asked then what he was to do at the conference. He said, a demo presentation on "\textit{Eye tracking and detection of ALS}". }
-
-
+\section{Hello World \hfill (10 points)}
+Your task is to print ``Hello, World!'' on the screen.
 
 \subsection*{Solution}
 %solution-start
-\begin{lstlisting}
-<?xml version = "1.0" encoding="UTF-8" standalone="yes"?>
-<document>
-    <researchers>
-        <researcher>
-            <name>
-                <firstname>
-                    Jason
-                </firstname>
-
-				<lastname>
-					Bourne
-				</lastname>
-			</name>
-
-			<credential>
-				<university>
-					Identity University
-				</university>
-
-				<location>
-					Galway, Ireland
-				</location>
-
-				<designation>
-					Professor
-				</designation>
-			</credential>
-
-			<conference>
-				<name>
-					Computer Based Medical Imaging
-				</name>
-
-				<presentationtype>
-					keynote
-				</presentationtype>
-
-				<title>
-					Smart Cameras for Smart Doctors
-				</title>
-			</conference>
-
-			<flight>
-				<number>
-					IC814
-				</number>
-
-				<drink>
-					Chardonay
-				</drink>
-			</flight>
-		</researcher>
-
-		<researcher>
-			<name>
-				<firstname>
-					Forrest
-				</firstname>
-
-				<lastname>
-					Gump
-				</lastname>
-			</name>
-
-			<credential>
-				<university>
-					Bubba University
-				</university>
-
-				<location>
-					Texas, USA
-				</location>
-
-				<designation>
-					PhD Student
-				</designation>
-			</credential>
-
-			<conference>
-				<name>
-					Computer Based Medical Imaging
-				</name>
-
-				<presentationtype>
-					paper
-				</presentationtype>
-
-				<title>
-					Smart Cameras to detect Health Hazads
-				</title>
-			</conference>
-
-			<flight>
-				<number>
-					IC814
-				</number>
-
-				<drink>
-					Beer
-				</drink>
-			</flight>
-		</researcher>
-
-		<researcher>
-			<name>
-				<firstname>
-					Don
-				</firstname>
-
-				<lastname>
-					Vito Corleone
-				</lastname>
-			</name>
-
-			<credential>
-				<university>
-					Sicilian University
-				</university>
-
-				<location>
-					Sicily, Italy
-				</location>
-
-				<designation>
-					Post Doctoral researcher
-				</designation>
-			</credential>
-
-			<conference>
-				<name>
-					Computer Based Medical Imaging
-				</name>
-
-				<presentationtype>
-					demo presentation
-				</presentationtype>
-
-				<title>
-					Eye tracking and detection of ALS
-				</title>
-			</conference>
-
-			<flight>
-				<number>
-					IC814
-				</number>
-
-				<drink>
-					Sparkling Water
-				</drink>
-			</flight>
-		</researcher>
-	</researchers>>
-</document>
-\end{lstlisting}
+\subsubsection*{hello\_world.py}
+\lstinputlisting[language=Python, breaklines=true]{hello_world.py}
 %solution-end
 %-------------------------------------------------------------------------------
 
@@ -383,28 +224,6 @@ plot_bar(error_sucess,"Successfuly vs. Unsucessfuly submited", "Frequency", "Res
 \end{verbatim}
 %solution-end
 %-------------------------------------------------------------------------------
-
-%-------------------------------------------------------------------------------
-
-\section{Short Questions (5 points)}
-1) Why is Meta Data important? (3 points)\\ 
-%solution-start
-Meta data is often referred to as data about the data and is represented by the \texttt{<meta>} tag. It describes information about the HTML page which usually cannot be represented by any other HTML tags. Meta tags were used by search engines to index web pages based on title, description, and even keywords. Even though the description meta tags have no effect on search engine rank, they do appear in search results. This means that others get to read the description on a search results page before clicking on the link, showing that meta descriptions should be written for people to read rather than for robots to find. Meta data (description, keywords, etc) will increase click-through rates.\\
-%solution-end
-
-2) It important to separate content from layout in HTML documents. Give two reasons why? (2 points)\\
-%solution-start
-Styling content inside the HTML document could lead to inconsistency of styling as one needs to style each element separately. Separating styling from content follows a better approach in not just styling the content but even presenting it across different screen sizes thus reducing a lot of inline styling code.\\
-Another advantage of having a separate styling sheet for the content is more flexibility in terms of design. The content remains the same but changing styles of representation of the content becomes easier. 
-%solution-end
-
-%-------------------------------------------------------------------------------
-
-
-
-
-
-
 
 \makefooter
 
