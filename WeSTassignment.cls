@@ -34,6 +34,9 @@
 % Font selection.
 %\RequirePackage{fontspec}
 
+% Support for the Text Companion fonts
+\RequirePackage{textcomp}
+
 % Micro-typographic extensions.
 \RequirePackage{microtype}
 
@@ -297,7 +300,7 @@ Use \texttt{pdflatex assignment\_X.tex} to build your PDF.
 \algrenewcommand\algorithmicthen{\AlgKeyword{then}}
 \algrenewcommand\algorithmicelse{\AlgKeyword{else}}
 \algrenewcommand\algorithmicrequire{\AlgKeyword{Input:}} % change "Require" to "Input"
-\algrenewcommand\algorithmicensure{\AlgKeyword{Output:}} % change "Ensure" to "Output'
+\algrenewcommand\algorithmicensure{\AlgKeyword{Output:}} % change "Ensure" to "Output"
 \algrenewcommand\algorithmicreturn{\AlgKeyword{return}}
 
 % Style for identifiers
@@ -314,11 +317,12 @@ Use \texttt{pdflatex assignment\_X.tex} to build your PDF.
   frame = tb,
   framexleftmargin = 20pt,
   basicstyle = \small\ttfamily,
-%   keywordstyle = \color{RoyalBlue},
+  keywordstyle = \color{blue}\bfseries,
+  commentstyle=\color{gray}\itshape,
   mathescape,
-%   breaklines = false,
   showspaces = false,
   showstringspaces = false,
+  upquote = true
 }
 \renewcommand*{\thelstnumber}{\arabic{lstnumber}:}
 \DeclareCaptionFormat{listing}{\hrule#1#2#3}
